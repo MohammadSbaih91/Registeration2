@@ -1,0 +1,267 @@
+﻿@model IEnumerable<Registeration2.Common.DTOs.UsersDTO.UsersDTO>
+
+@{
+    ViewBag.Title = "Students";
+}
+
+<h2>Students</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstNameAr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstNameEn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastNameAr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastNameEn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsComplete)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsChangePasswordRequired)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsChangeUsernameRequired)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NationalityNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdCardExpieryDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdCardImageURL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PassportId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PassportExpieryDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PassportImageURL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProfileImageURL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mobile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PostOffice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChannelId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountTypeId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GenderId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdCard)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NationalityId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SocialId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AspNetUserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastLoginDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LoginAttempts)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VerificationCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MobileNeedsVerification)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MobileVerificationCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StatusId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstTimeRegister)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsBlocked)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedOn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModifiedOn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModifiedBy)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstNameAr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstNameEn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastNameAr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastNameEn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsComplete)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsChangePasswordRequired)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsChangeUsernameRequired)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NationalityNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdCardExpieryDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdCardImageURL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PassportId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PassportExpieryDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PassportImageURL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateOfBirth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProfileImageURL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mobile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fax)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PostOffice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChannelId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccountTypeId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GenderId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdCard)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NationalityId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SocialId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AspNetUserId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastLoginDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LoginAttempts)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VerificationCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MobileNeedsVerification)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MobileVerificationCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StatusId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstTimeRegister)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsBlocked)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedOn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedBy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModifiedOn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModifiedBy)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
